@@ -1,7 +1,19 @@
-function Navbar() {
+function Navbar(handleAboutClick, handleGalleryClick, handleContactsClick) {
   return (
     <>
-      <h1> Test </h1>
+      <nav className="navbar">
+        <ul className="prompt">
+          <li onClick={handleAboutClick} title="about mint">
+            MYNT
+          </li>
+          <li onClick={handleGalleryClick} title="gallery">
+            YouTube
+          </li>
+          <li onClick={handleContactsClick} title="contacts">
+            Contacts
+          </li>
+        </ul>
+      </nav>
     </>
   );
 }

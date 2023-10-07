@@ -3,19 +3,8 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  box-sizing: border-box;
+  font-family: prompt;
 }
 
 @keyframes logo-spin {
@@ -39,4 +28,72 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* font setting */
+@font-face {
+  font-family: prompt-Bold;
+  src: url(../public/Prompt-Bold.ttf);
+}
+
+@font-face {
+  font-family: prompt;
+  src: url(../public/Prompt-Regular.ttf);
+}
+
+.prompt-Bold {
+  font-family: prompt-Bold;
+}
+
+.prompt {
+  font-family: prompt;
+}
+
+::selection {
+  background-color: #6eb7b7;
+  color: black;
+}
+
+* {
+  background-color: rgb(37, 37, 37);
+  color: #aac0c0;
+}
+
+/* NavBar Styles */
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 250px;
+}
+
+li {
+  transition: transform 0.2s;
+  font-size: 30px;
+  color: #87dada;
+  letter-spacing: 1px;
+}
+
+li:hover {
+  transform: scale(1.1);
+}
+
+/* content section */
+.box {
+  border: solid 3px #6eb7b7;
+  width: 360px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 15px;
+}
+
+iframe {
+  border: solid 3px #6eb7b7;
+  width: 320px;
+  height: 180px;
+  margin-top: 16px;
+  border-radius: 5px;
 }
