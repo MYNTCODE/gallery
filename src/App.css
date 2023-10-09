@@ -1,5 +1,4 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -7,7 +6,7 @@
   font-family: prompt;
 }
 
-@keyframes logo-spin {
+/* @keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
@@ -20,15 +19,7 @@
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+} */
 
 /* font setting */
 @font-face {
@@ -55,8 +46,7 @@
 }
 
 * {
-  background-color: rgb(37, 37, 37);
-  color: #aac0c0;
+  background-color: rgb(198, 198, 198);
 }
 
 /* NavBar Styles */
@@ -70,7 +60,7 @@ ul {
 li {
   transition: transform 0.2s;
   font-size: 30px;
-  color: #87dada;
+  color: black;
   letter-spacing: 1px;
 }
 
@@ -79,8 +69,15 @@ li:hover {
 }
 
 /* content section */
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  /* Optional: Set a height for the section, adjust as needed */
+}
+
 .box {
-  border: solid 3px #6eb7b7;
   width: 360px;
   height: 250px;
   display: flex;
@@ -88,10 +85,18 @@ li:hover {
   align-items: center;
   text-align: center;
   border-radius: 15px;
+  border: 2px solid;
+  padding: 10px;
+  transition: transform 0.5s, box-shadow 0.3s ease;
+  margin: 40px;
+}
+.container-videos:hover .box {
+  transform: scale(1.1);
+  box-shadow: 15px 15px;
 }
 
 iframe {
-  border: solid 3px #6eb7b7;
+  border: solid 2px rgb(0, 0, 0);
   width: 320px;
   height: 180px;
   margin-top: 16px;
