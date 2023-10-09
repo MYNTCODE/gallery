@@ -1,0 +1,104 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: prompt;
+}
+
+/* @keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+} */
+
+/* font setting */
+@font-face {
+  font-family: prompt-Bold;
+  src: url(../public/Prompt-Bold.ttf);
+}
+
+@font-face {
+  font-family: prompt;
+  src: url(../public/Prompt-Regular.ttf);
+}
+
+.prompt-Bold {
+  font-family: prompt-Bold;
+}
+
+.prompt {
+  font-family: prompt;
+}
+
+::selection {
+  background-color: #6eb7b7;
+  color: black;
+}
+
+* {
+  background-color: rgb(198, 198, 198);
+}
+
+/* NavBar Styles */
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 250px;
+}
+
+li {
+  transition: transform 0.2s;
+  font-size: 30px;
+  color: black;
+  letter-spacing: 1px;
+}
+
+li:hover {
+  transform: scale(1.1);
+}
+
+/* content section */
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  /* Optional: Set a height for the section, adjust as needed */
+}
+
+.box {
+  width: 360px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 15px;
+  border: 2px solid;
+  padding: 10px;
+  transition: transform 0.5s, box-shadow 0.3s ease;
+  margin: 40px;
+}
+.container-videos:hover .box {
+  transform: scale(1.1);
+  box-shadow: 15px 15px;
+}
+
+iframe {
+  border: solid 2px rgb(0, 0, 0);
+  width: 320px;
+  height: 180px;
+  margin-top: 16px;
+  border-radius: 5px;
+}
