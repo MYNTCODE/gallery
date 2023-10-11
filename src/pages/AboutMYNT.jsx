@@ -1,3 +1,5 @@
+import "./CSS/About.css";
+
 function AboutMYNT() {
   return (
     <>

@@ -1,7 +1,6 @@
 #root {
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 0;
   box-sizing: border-box;
   font-family: prompt;
 }
@@ -41,64 +40,81 @@
 }
 
 ::selection {
-  background-color: #6eb7b7;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+/* * {
+  background-color: rgb(198, 198, 198);
+} */
+
+/* NavBar Styles */
+.navbar {
+  background-color: #ffffff;
+  padding: 4px 20%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  max-width: 100%;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+/* .nav-list li {
+  cursor: pointer;
+} */
+
+.nav-list li {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  position: relative;
+}
+
+.nav-list a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; /* Set the height of the underline */
+  background-color: #000000; /* Set the underline color to match your background */
+  transition: width 0.3s ease;
+}
+.nav-list a:hover::before {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
   color: black;
 }
 
-* {
-  background-color: rgb(198, 198, 198);
-}
-
-/* NavBar Styles */
 ul {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
-  padding-inline: 250px;
+  justify-content: center;
 }
 
 li {
-  transition: transform 0.2s;
-  font-size: 30px;
+  transition: transform 0.3s;
+  font-size: 20px;
   color: black;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
 }
 
-li:hover {
+/* li:hover {
   transform: scale(1.1);
-}
+} */
 
 /* content section */
-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  /* Optional: Set a height for the section, adjust as needed */
-}
-
-.box {
-  width: 360px;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  border-radius: 15px;
-  border: 2px solid;
-  padding: 10px;
-  transition: transform 0.5s, box-shadow 0.3s ease;
-  margin: 40px;
-}
-.container-videos:hover .box {
-  transform: scale(1.1);
-  box-shadow: 15px 15px;
-}
-
-iframe {
-  border: solid 2px rgb(0, 0, 0);
-  width: 320px;
-  height: 180px;
-  margin-top: 16px;
-  border-radius: 5px;
-}
