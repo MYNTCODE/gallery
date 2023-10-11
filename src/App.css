@@ -111,6 +111,7 @@ li {
   font-size: 20px;
   color: black;
   letter-spacing: 3px;
+  user-select: none;
 }
 
 /* li:hover {

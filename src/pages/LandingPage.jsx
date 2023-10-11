@@ -1,5 +1,5 @@
 import Navbar from "../components/NavBar";
-import AboutMYNT from "./Infomation";
+import AboutMYNT from "./Information";
 import Gallery from "./Gallery";
 import Contacts from "./Contacts";
 import { useRef } from "react";

@@ -10,7 +10,7 @@ const Navbar = ({
           <a href="#about">MYNT</a>
         </li>
         <li onClick={handleGalleryClick} title="gallery">
-          <a href="#gallery">YouTube</a>
+          <a href="#gallery">Gallery</a>
         </li>
         <li onClick={handleContactsClick} title="contacts">
           <a href="#contacts">Contacts</a>

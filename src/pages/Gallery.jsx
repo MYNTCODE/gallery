@@ -1,6 +1,6 @@
 import videos from "../data/contents";
 import "./CSS/Gallery.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Gallery() {
   const openNewWindow = (videoUrl) => {
@@ -14,6 +14,27 @@ function Gallery() {
     setShowAll(true);
     setDisplayedVideos(videos);
   };
+
+  // animate scroll
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const element = document.querySelector(".gallery-head");
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight;
+
+        if (isVisible) {
+          element.classList.add("fade-in");
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
