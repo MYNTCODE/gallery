@@ -1,0 +1,90 @@
+/* content section */
+section {
+  display: flex;
+  margin: 2%;
+  flex-wrap: wrap;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  /* Optional: Set a height for the section, adjust as needed */
+}
+
+.box {
+  width: 360px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 15px;
+  border: 2px solid;
+  padding: 10px;
+  transition: transform 0.5s, box-shadow 0.3s ease;
+  margin: 40px;
+}
+
+.container-videos:hover .box {
+  transform: scale(1.1);
+  box-shadow: 15px 15px;
+  cursor: pointer;
+}
+
+iframe {
+  border: solid 2px rgb(0, 0, 0);
+  width: 320px;
+  height: 180px;
+  margin-top: 16px;
+  border-radius: 5px;
+}
+
+.title :hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.gallery-head {
+  font-size: 200px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  margin-left: 10%;
+  user-select: none;
+  padding-top: 0;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+.gallery-head.fade-in {
+  opacity: 1;
+}
+
+.see-more {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.see-more:hover {
+  cursor: pointer;
+}
+
+.see-more-text {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  width: 120px;
+  position: relative;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.see-more-text::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -3px;
+  width: 0;
+  height: 2px; /* Set the height of the underline */
+  background-color: #000000; /* Set the underline color to match your background */
+  transition: width 0.3s ease;
+}
+
+.see-more-text:hover::before {
+  width: 100%;
+}

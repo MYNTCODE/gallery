@@ -1,20 +1,23 @@
-function Navbar(handleAboutClick, handleGalleryClick, handleContactsClick) {
+const Navbar = ({
+  handleAboutClick,
+  handleGalleryClick,
+  handleContactsClick,
+}) => {
   return (
-    <>
-      <nav className="navbar">
-        <ul className="prompt">
-          <li onClick={handleAboutClick} title="about mint">
-            MYNT
-          </li>
-          <li onClick={handleGalleryClick} title="gallery">
-            YouTube
-          </li>
-          <li onClick={handleContactsClick} title="contacts">
-            Contacts
-          </li>
-        </ul>
-      </nav>
-    </>
+    <nav className="navbar">
+      <ul className="nav-list">
+        <li onClick={handleAboutClick} title="about mint">
+          <a href="#about">MYNT</a>
+        </li>
+        <li onClick={handleGalleryClick} title="gallery">
+          <a href="#gallery">Gallery</a>
+        </li>
+        <li onClick={handleContactsClick} title="contacts">
+          <a href="#contacts">Contacts</a>
+        </li>
+      </ul>
+    </nav>
   );
-}
+};
+
 export default Navbar;
