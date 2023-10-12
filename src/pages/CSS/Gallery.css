@@ -1,6 +1,7 @@
 /* content section */
 section {
   display: flex;
+  margin: 2%;
   flex-wrap: wrap;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
@@ -20,6 +21,7 @@ section {
   transition: transform 0.5s, box-shadow 0.3s ease;
   margin: 40px;
 }
+
 .container-videos:hover .box {
   transform: scale(1.1);
   box-shadow: 15px 15px;
@@ -41,10 +43,11 @@ iframe {
 
 .gallery-head {
   font-size: 200px;
+  margin-top: 30px;
   margin-bottom: 0;
   margin-left: 10%;
   user-select: none;
-  padding-top: 80px;
+  padding-top: 0;
   opacity: 0;
   transition: opacity 2s ease;
 }

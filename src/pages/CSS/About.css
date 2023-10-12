@@ -14,19 +14,22 @@
   color: pink;
 }
 
-/* .information-detail {
-  border: 2px solid #000;
-} */
+.information-detail {
+  /* border: 2px solid #e33a3a; */
+  display: flex;
+  justify-content: space-between;
+  height: 90vh;
+}
 
 .container-about-me {
   display: flex;
   flex-direction: column;
   text-align: left;
   padding-left: 10%;
+  top: 42%;
   position: absolute;
-}
-.space {
-  height: 40vh;
+  /* border: solid 2px rgb(18, 216, 200); */
+  width: 50%;
 }
 
 .about-me {
@@ -37,6 +40,7 @@
   margin-top: 0;
   padding-top: 0;
   user-select: none;
+  /* border: #e33a3a solid 1px; */
 }
 .dot {
   font-size: 90px;
@@ -46,10 +50,41 @@
   position: relative;
   top: -150px;
   letter-spacing: 1px;
+  width: 70%;
 }
 
 .details-asmr {
   position: relative;
   top: -160px;
+  letter-spacing: 1px;
+  width: 100vh;
+  width: 70%;
+}
+
+.asmr-box {
+  /* border: 2px solid #5c13f0; */
+  background-color: rgb(255, 216, 223);
+  border-radius: 30px;
+  margin: 8%;
+  padding: 4%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 1px;
+}
+
+.text-ASMR {
+  text-decoration: underline;
+  user-select: none;
+}
+.text-ASMR:hover {
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px pink;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.text-what-is {
   letter-spacing: 1px;
 }

@@ -2,6 +2,7 @@ import Navbar from "../components/NavBar";
 import AboutMYNT from "./Information";
 import Gallery from "./Gallery";
 import Contacts from "./Contacts";
+import "./CSS/Contacts.css";
 import { useRef } from "react";
 
 const LandingPage = () => {
