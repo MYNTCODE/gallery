@@ -1,6 +1,28 @@
 import "./CSS/Contacts.css";
+import { useState } from "react";
 
 function Contacts() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Perform any additional client-side validation here
+
+    // Log the form data
+    console.log("Form Data:", formData);
+
+    // Can send the form data to the server or perform other actions here
+  };
+
   return (
     <>
       <div className="contacts-container">
@@ -8,27 +30,41 @@ function Contacts() {
           <h1 className="contacts" title="contacts">
             Contact
           </h1>
-          <form
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-          >
-            <input type="hidden" name="form-name" value="contact" />
+          <form onSubmit={handleSubmit}>
             <label htmlFor="name">Name</label>
-            <input type="text" id="name" name="name" required />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
 
             <label htmlFor="email">Email</label>
-            <input type="email" id="email" name="email" required />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
 
             <label htmlFor="message">Message</label>
-            <input type="message" id="message" name="message" required />
+            <textarea
+              id="message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              required
+              style={{ resize: "none" }}
+            ></textarea>
 
-            <button type="submit"> Send</button>
+            <button type="submit">Send</button>
           </form>
         </div>
         <div className="info-box">
-          {" "}
           <h1 className="info" title="info">
             Info
           </h1>
@@ -69,4 +105,5 @@ function Contacts() {
     </>
   );
 }
+
 export default Contacts;
