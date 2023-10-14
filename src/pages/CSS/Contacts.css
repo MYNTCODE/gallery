@@ -116,3 +116,37 @@ label {
   transform: scale(1.2);
   filter: drop-shadow(5px 5px 5px rgb(255, 129, 150));
 }
+
+@media only screen and (max-width: 600px) {
+  .contacts {
+    font-size: 70px;
+  }
+  .info-box {
+    background-color: transparent;
+    border-radius: 26px;
+    position: relative;
+    margin: 0;
+    left: -150px;
+  }
+  .contacts-section {
+    /* border: #c32121 solid 1px; */
+    height: 100vh;
+    width: 588px;
+    position: absolute;
+  }
+
+  .icon-socials {
+    display: flex;
+    width: 50px;
+    padding: 15px;
+    transition: transform 0.5s;
+    margin-top: 0;
+    position: relative;
+    left: -140px;
+    top: 290px;
+  }
+
+  .info {
+    visibility: hidden;
+  }
+}
