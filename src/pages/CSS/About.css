@@ -62,7 +62,7 @@
 }
 
 .asmr-box {
-  /* border: 2px solid #5c13f0; */
+  /* border: 2px solid #5c13f0;*/
   background-color: rgb(255, 216, 223);
   border-radius: 30px;
   margin: 8%;
@@ -72,6 +72,32 @@
   flex-direction: column;
   align-items: center;
   letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 600px) {
+  .asmr-box {
+    /* border: 2px solid #8f7fb0; */
+    position: absolute;
+    background-color: rgb(255, 216, 223);
+    border-radius: 30px;
+    margin: 0%;
+    padding: 15px;
+    width: 38%;
+    top: 43%;
+    left: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 1px;
+  }
+  .p-asmr {
+    font-size: 11px;
+    padding: 0 20px;
+  }
+  .text-what-is {
+    font-size: 24px;
+    margin: 0px;
+  }
 }
 
 .text-ASMR {

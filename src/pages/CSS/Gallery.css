@@ -88,3 +88,9 @@ iframe {
 .see-more-text:hover::before {
   width: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+  .gallery-head {
+    font-size: 150px;
+  }
+}

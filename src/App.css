@@ -119,3 +119,19 @@ li {
 } */
 
 /* content section */
+
+@media only screen and (max-width: 600px) {
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+  }
+  li {
+    transition: transform 0.3s;
+    font-size: 20px;
+    color: black;
+    letter-spacing: 2px;
+    user-select: none;
+  }
+}
