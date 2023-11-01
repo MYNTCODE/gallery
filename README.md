@@ -1,4 +1,4 @@
-### Landing Page my infomation (Frontend) : mini project for pratice and improved divide components in react.
+### Landing Page my infomation (Frontend) : mini project for practice and improved divide components in react.
 
 ### [To visit the website, click here.](https://main--sage-rugelach-8deb2f.netlify.app/)
 
