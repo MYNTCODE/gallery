@@ -246,3 +246,8 @@ label {
     justify-content: space-between;
   }
 }
+
+.error-message {
+  margin-top: -28px;
+  font-size: 10px;
+}
